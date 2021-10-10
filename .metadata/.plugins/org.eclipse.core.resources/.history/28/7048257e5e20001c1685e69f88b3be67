@@ -1,0 +1,19 @@
+package HashSet;
+
+public class MyHashMap {
+	
+	public MyHashMap()
+	{}
+	
+	private int hashFuntion(int key)
+	{}
+	
+	public void put(int key, int value)
+	{}
+	
+	public void remove (int key)
+	{}
+	
+	
+
+}

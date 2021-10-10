@@ -1,0 +1,45 @@
+package Lesson57;
+/* 1 ng choi co quyen dat cuoc so tien <= so tien ho dang co
+ luat  choi: co 3 vien xuc sac, moi lan lac se ra 1 ket qua, ket qua = gtri 1+ gtri 2_ gtri 3
+ 1. neu tong =3 hoac 18 thi cai thang
+ 2.tong 4-10 <=> xiu <=> 
+ 3. tong 11-17 <=> tai 
+ */
+
+import java.util.Scanner;
+
+public class TaiXiu {
+	public static void main(String[] args) {
+		double account =5000;
+		Scanner scanner = new Scanner(System.in);
+		int luachon=1;
+		
+
+		do {
+			System.out.println("Moi ban lua chon");
+			System.out.println("1. Tiep tuc choi");
+			System.out.println("0. Thoat");
+			luachon=scanner.nextInt();
+			if(luachon==1)
+			{
+				System.out.println("Start");
+				System.out.println("My account: "+account+" ban muon cuoc bao nhieu? (>0 and <=account");
+				double cuoc=scanner.nextDouble();
+				do{
+					
+					
+					if(cuoc<0&& cuoc>=5000)
+					{
+						System.out.println("Lua chon ko hop le, vui long nhap lai (>0 and <= current account ");
+					}
+					
+					
+				
+				}while(cuoc<0 && cuoc >5000 );
+			}
+			
+		} while (luachon!=0);
+	}
+	}
+
+}

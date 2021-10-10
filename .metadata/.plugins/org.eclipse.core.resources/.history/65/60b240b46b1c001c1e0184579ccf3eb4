@@ -1,0 +1,20 @@
+package HashSet;
+
+import java.util.Set;
+
+public class HashSet {
+	boolean containsDuplicate(int[] nums)
+	{
+		Set<Integer> mySet = new java.util.HashSet<Integer>();
+		
+		for (int n : nums) {
+			if(mySet.contains(n)==true)
+			{
+				
+			}
+			
+		}
+		return false;
+	}
+
+}

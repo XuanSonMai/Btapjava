@@ -1,0 +1,22 @@
+package Interface;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Test câu a");
+        MayTinhCasioFX500 fx500= new MayTinhCasioFX500();
+        MayTinhVinacal500 vinacal500= new MayTinhVinacal500();
+        
+       double [] b = {5,4,3,2,1};
+       SapXepChen sxchSapXepChen= new SapXepChen();
+       SapXepChon sapXepChon = new SapXepChon();
+       sapXepChon.SapXepTang(b);
+       System.out.println("Mang sau khi sap xep");
+       for (double d : b) {
+    	   System.out.print((int)d);
+		
+	}
+	}
+
+}

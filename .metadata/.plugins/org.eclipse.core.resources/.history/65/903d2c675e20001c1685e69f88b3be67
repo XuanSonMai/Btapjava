@@ -1,0 +1,12 @@
+package HashSet;
+
+public class MyHashMap {
+	
+	public MyHashMap()
+	{}
+	
+	private int hashFuntion(int key)
+	{}
+	
+
+}

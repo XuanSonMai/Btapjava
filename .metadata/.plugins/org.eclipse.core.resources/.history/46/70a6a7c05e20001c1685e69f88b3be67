@@ -1,0 +1,24 @@
+package HashSet;
+
+public class MyHashMap {
+	 private final int SIZE =1000;
+	public MyHashMap()
+	{}
+	
+	private int hashFuntion(int key)
+	{
+		return key %1000;
+	}
+	
+	public void put(int key, int value)
+	{}
+	
+	public void remove (int key)
+	{}
+	
+	public void get(int key)
+	{}
+	
+	
+
+}

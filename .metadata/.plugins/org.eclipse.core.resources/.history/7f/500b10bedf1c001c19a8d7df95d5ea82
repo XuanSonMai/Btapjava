@@ -1,0 +1,11 @@
+package merge1;
+
+public class main {
+
+	public static void main(String[] args) {
+		merge sMerge = new merge();
+		
+
+	}
+
+}

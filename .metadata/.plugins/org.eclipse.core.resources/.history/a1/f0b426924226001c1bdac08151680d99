@@ -1,0 +1,23 @@
+package BinaryTree;
+
+import BinaryTree.MyTreeNode.TreeNode;
+
+public class Test {
+
+	public static void main(String[] args) {
+		MyTreeNode myTreeNode = new MyTreeNode();
+		myTreeNode.khoitao1();
+		
+		
+	    System.out.println("GIA TRI BAN DAU");
+		myTreeNode.duyetCay(myTreeNode.rooTreeNode);
+		myTreeNode.Insert(myTreeNode.rooTreeNode, 1);
+		System.out.println("Left" + myTreeNode.rooTreeNode.righTreeNode.value);
+		//System.out.println("GIA TRI VUA DC THEM");
+		//myTreeNode.duyetCay(myTreeNode.rooTreeNode);
+		//System.out.println(myTreeNode.rooTreeNode.righTreeNode.value);
+		
+
+	}
+
+}

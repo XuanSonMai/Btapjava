@@ -1,0 +1,26 @@
+package Java36;
+
+public class Famer  extends Employee{
+String luongString;
+
+public String getLuongString() {
+	return luongString;
+}
+
+public void setLuongString(String luongString) {
+	this.luongString = luongString;
+}
+
+@Override
+	void gomaytinh() {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Famer go may tinh");
+	}
+ @Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		return super.equals(obj);
+	}
+
+}

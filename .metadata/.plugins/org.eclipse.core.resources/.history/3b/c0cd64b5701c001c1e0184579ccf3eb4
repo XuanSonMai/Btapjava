@@ -1,0 +1,36 @@
+package HashSet;
+
+import java.util.Map;
+
+public class HashMap {
+	
+	public static void main(String[] args) {
+		int[] arr= {1,2,2,2};
+		Map<Integer, Integer> myMap = new java.util.HashMap<Integer, Integer>();
+		// key la gia tri phan tu trong mang
+		//value la so lan xuat hien phan tu trong mang
+		
+		for (int i : arr) {
+			if(myMap.containsKey(i)==false)
+			{
+				//i chua xuat hien
+				myMap.put(i, 1);
+			}
+			else {
+				//i da xuat hien
+				int count = myMap.get(i);
+				count++;
+				myMap.put(i, count); // cap nhat value cho key i
+			}
+			
+			for(Map.Entry entry : myMap.entrySet())
+			{
+				System.out.println(entr);
+			}
+			
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package BinaryTree;
+
+public class TreeNode {
+	int value;
+	TreeNode lefTreeNode;
+    TreeNode righTreeNode;
+    public TreeNode(int vl) {
+		this.value=vl;
+	}
+
+}

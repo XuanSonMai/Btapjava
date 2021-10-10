@@ -1,0 +1,35 @@
+package Java36;
+
+public class Test {
+   static void sapXep(int a[]) {
+	// TODO Auto-generated method stub
+	   for(int i=0; i< a.length-1 ; i++)
+	   {
+		   for(int j= i+1 ; j<a.length;j++)
+		   {
+			   if(a[i]> a[j])
+			   {
+				   int tem= a[i];
+				   a[i] = a[j];
+				   a[j]= tem;
+			   }
+		   }
+	   }
+	   
+
+}
+   static void xinChao(Test a)
+   {
+	   System.out.println("Xin chao");
+   }
+	public static void main(String[] args) {
+	
+	  Employee object = new Famer();
+	  object.gomaytinh();
+	  
+	  
+	 
+	  
+		
+	}
+}

@@ -1,0 +1,17 @@
+package Interface;
+
+public class SapXepChen implements SapXepInterFace{
+
+	@Override
+	public void SapXepTang(double[] arr) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void SapXepGiam(double[] arr) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

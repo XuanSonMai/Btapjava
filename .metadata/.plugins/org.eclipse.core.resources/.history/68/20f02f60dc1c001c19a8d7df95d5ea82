@@ -1,0 +1,10 @@
+package merge1;
+
+public class merge {
+	public int[] merge(int[]a1, int[]a2)
+	{
+		int n= a1.length+a2.length;
+		
+	}
+
+}

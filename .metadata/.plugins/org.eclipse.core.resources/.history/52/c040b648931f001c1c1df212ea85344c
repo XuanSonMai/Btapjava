@@ -1,0 +1,19 @@
+package HashSet;
+
+import java.util.ArrayList;
+
+public class MyHashSet {
+	private final int SIZE = 1000;
+	private ArrayList[] myBucket;
+	
+	
+	public MyHashSet() {
+		myBucket = new ArrayList[SIZE];
+	}
+	
+	private int hashFuntion(int key)
+	{
+	  return key%SIZE;	
+	}
+
+}

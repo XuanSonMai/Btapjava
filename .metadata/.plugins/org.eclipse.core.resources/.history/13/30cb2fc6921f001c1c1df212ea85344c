@@ -1,0 +1,7 @@
+package HashSet;
+
+public class MyHashSet {
+	private final int SIZE = 1000;
+	
+
+}

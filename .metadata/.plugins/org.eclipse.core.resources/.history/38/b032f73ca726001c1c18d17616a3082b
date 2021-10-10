@@ -1,0 +1,15 @@
+package Lesson66;
+
+public class Generic <T, U> {
+	T value;
+	U keyU;
+	public Generic(T value, U keyU) {
+		super();
+		this.value = value;
+		this.keyU = keyU;
+	}
+	
+	
+
+}
+

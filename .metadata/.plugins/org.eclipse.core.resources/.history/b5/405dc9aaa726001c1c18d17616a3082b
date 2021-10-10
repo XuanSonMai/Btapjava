@@ -1,0 +1,18 @@
+package Lesson66;
+
+import java.nio.FloatBuffer;
+
+public class Test {
+
+	public static void main(String[] args) {
+//		Generic generic = new Generic(15); 
+//		System.out.println(generic.getValue());
+		
+		Generic b= new Generic<>(2);
+		System.out.println(b.getValue());
+		
+		
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package Ourter;
+
+public class Person {
+
+	public void Xinchao()
+	{
+		Kid kid = new Kid();
+		kid.hello();
+	}
+
+}
+//outner class
+class Kid
+{
+	private int tuoi;
+	public void hello()
+	{
+		System.out.println("Hello");
+		
+	}
+	}

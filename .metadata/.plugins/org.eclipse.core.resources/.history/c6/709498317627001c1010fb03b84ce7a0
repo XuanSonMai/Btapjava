@@ -1,0 +1,59 @@
+package Lesson70;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
+import java.security.spec.ECFieldF2m;
+
+public class Test {
+	
+	static void coppyAll(File f1, File f2)
+	{
+		try {
+			Files.copy(f1.toPath(),f2.toPath(),StandardCopyOption.REPLACE_EXISTING);
+			System.out.println("f2 sau khi dc coppy"+f2.getAbsolutePath());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		if(f1.isDirectory())
+		{
+			File[] subFiles = f1.listFiles();
+			for (File file : subFiles) {
+				System.out.println("File con cua f1"+file);
+				File newFile = new File(f2.getAbsoluteFile()+"\\"+f2.getName()); // tao ra file con tuong ung 
+				
+				coppyAll(file,newFile );
+			}
+		}
+	}
+	public static void main(String[] args) {
+//		File f0 = new File("\\Users\\Admin\\baitapjava\\JAVA1\\src\\Lesson70\\move.txt");
+//		File f1 = new File("\\Users\\Admin\\baitapjava\\JAVA1\\src\\Lesson70\\movetarget\\move.txt");
+//		
+		//System.out.println(f0.exists());
+		
+//		try {
+//			Files.move(f0.toPath(), f1.toPath(), StandardCopyOption.REPLACE_EXISTING); // di chuyen file tu a sang b
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		
+		
+		// f0 coppy
+		File f2 = new File("\\Users\\Admin\\baitapjava\\JAVA1\\src\\Lesson70\\movetarget");
+		File f3 = new File("\\Users\\Admin\\baitapjava\\JAVA1\\src\\Lesson70\\copy");
+		
+		
+		try {
+			Files.copy(f2.toPath(), f3.toPath(),StandardCopyOption.REPLACE_EXISTING);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

@@ -1,0 +1,26 @@
+package Collections;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+import java.util.function.IntBinaryOperator;
+
+public class CLS {
+	public static void main(String[] args) {
+		List<Integer> numberList = new ArrayList<Integer>();
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Nhap ten phan tu");
+		int n = scanner.nextInt();
+		for (int i = 0; i < n; i++) {
+			numberList.add(scanner.nextInt());
+			
+		}
+		for(int i=0; i<numberList.size(); i++)
+		{
+			System.out.println(numberList.get(i)+" ");
+			
+		}
+	}
+
+}

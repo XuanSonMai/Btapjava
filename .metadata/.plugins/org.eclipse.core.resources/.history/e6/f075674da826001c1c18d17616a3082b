@@ -1,0 +1,37 @@
+package Lesson66;
+
+public class Generic <T, U> {
+	T value;
+	U keyU;
+	public Generic(T value, U keyU) {
+		super();
+		this.value = value;
+		this.keyU = keyU;
+	}
+	
+	static <T> void ( T element)
+	{
+		System.out.println(element);
+	}
+	public T getValue() {
+		return value;
+	}
+	public void setValue(T value) {
+		this.value = value;
+	}
+	public U getKeyU() {
+		return keyU;
+	}
+	public void setKeyU(U keyU) {
+		this.keyU = keyU;
+	}
+	void print()
+	{
+		System.out.println(value);
+		System.out.println(keyU);
+	}
+	
+	
+
+}
+

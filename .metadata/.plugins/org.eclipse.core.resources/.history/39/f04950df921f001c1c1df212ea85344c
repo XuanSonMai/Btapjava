@@ -1,0 +1,16 @@
+package HashSet;
+
+public class MyHashSet {
+	private final int SIZE = 1000;
+	
+	
+	public MyHashSet() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	private int hashFuntion(int key)
+	{
+	  return key%SIZE;	
+	}
+
+}

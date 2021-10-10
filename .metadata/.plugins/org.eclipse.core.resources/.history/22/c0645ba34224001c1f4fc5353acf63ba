@@ -1,0 +1,19 @@
+package LC_049;
+
+public class Test {
+public static int nextNumber(int n)
+{
+	     int sum=0;
+			while(n!=0){
+				int k= n%10;
+				n=n/10;
+				sum+=(k*k);
+			    }
+	   return sum;
+
+}
+public static void main(String[] args) {
+	
+	System.out.println(nextNumber(24));
+}
+}

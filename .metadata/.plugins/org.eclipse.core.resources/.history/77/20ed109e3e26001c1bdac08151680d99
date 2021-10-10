@@ -1,0 +1,19 @@
+package BinaryTree;
+
+import BinaryTree.MyTreeNode.TreeNode;
+
+public class Test {
+
+	public static void main(String[] args) {
+		MyTreeNode myTreeNode = new MyTreeNode();
+		myTreeNode.khoitao1();
+		myTreeNode.Insert(myTreeNode root, 2);
+		
+		
+		//myTreeNode.duyetCay(myTreeNode.rooTreeNode);
+		//System.out.println(myTreeNode.rooTreeNode.righTreeNode.value);
+		
+
+	}
+
+}

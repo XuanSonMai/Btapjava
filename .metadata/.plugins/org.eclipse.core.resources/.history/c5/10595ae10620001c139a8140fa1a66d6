@@ -1,0 +1,54 @@
+package Arrays;
+
+public class ViDu {
+	
+	public static void main(String[] args) {
+		String names[] = new String[3];
+		names[0] = "mai";
+		names[1] = "xuan";
+		//System.out.println(names);
+		
+		//======== cach khai bao 2
+		String [] na = {"Mai", "xuan"};
+		
+		for(int i=0; i<na.length;i++)
+		{
+			System.out.print (na[i]+" ");
+		}
+		//======== cach khai bao 3
+				String nb[] = new String[] {"Mai" ,"Xuan"}; 
+				
+				
+				
+				//===============CACH GAN 
+				//c1 gan truc tiep
+//				String[] nbStrings = na;
+//				
+//				System.out.print("\nMang sau khi gan: ");
+//				for(int i=0; i<na.length;i++)
+//				{
+//					
+//					System.out.print (nbStrings[i]+" ");
+//				}
+				
+				//c2 : dung clone
+//				String[] b = new String[na.length] ;
+//				
+//						System.out.print("\n Mang sau khi dc sao chep: " );
+//						for (String string : b) {
+//							System.out.print(string+" ");
+//						}
+						//c3 dung system.arraycopy
+						
+						String[] a = new String[na.length] ;
+						System.arraycopy(na, 0, a, 0, 2);
+						
+						System.out.print("\n Mang sau khi dc sao chep: " );
+						for (String string : a) {
+							System.out.print(string+" ");
+				
+				
+	}
+	
+
+}

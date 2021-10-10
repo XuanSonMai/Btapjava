@@ -1,0 +1,64 @@
+package HashSet;
+
+import java.util.ArrayList;
+
+import merge1.main;
+
+public class MyHashSet {
+	private final int SIZE = 1000;
+	private ArrayList[] myBucket;
+	
+	
+	public MyHashSet() {
+		myBucket = new ArrayList[SIZE];
+		for(int i=0; i< myBucket.length;i++)
+		{
+			myBucket[i] = new ArrayList<>();
+		}
+	}
+	
+	private int hashFuntion(int key)
+	{
+	  return key%SIZE;	
+	}
+	void add(int key)
+	{
+		int hashValueIndex = hashFuntion(key);
+		int keyIndex = myBucket[hashValueIndex].indexOf(key);
+		if (keyIndex<0)
+		{
+		  myBucket[hashValueIndex].add(key);	
+		}
+	}
+	
+	boolean contains()
+	{
+		return false;
+	}
+	void remove1(int key)
+	{
+		int hashValueIndex = hashFuntion(key);
+		System.out.println("chuan bi xoa key gia tri " + key +" vi tri " + hashValueIndex);
+		var bucket =myBucket[hashValueIndex];
+		bucket.remove(key);
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		MyHashSet myHashSet = new MyHashSet();
+		myHashSet.add(1);
+		myHashSet.add(1001);
+		myHashSet.add(2001);
+		myHashSet.remove1(1001);
+		
+	
+		System.out.println("phan tu o bucket[1]" +myHashSet.myBucket[1].toString());
+		
+		
+		
+		
+		}
+	}
+
+

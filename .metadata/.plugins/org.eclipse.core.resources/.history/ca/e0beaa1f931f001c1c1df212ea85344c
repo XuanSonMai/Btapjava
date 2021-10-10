@@ -1,0 +1,19 @@
+package HashSet;
+
+import java.util.ArrayList;
+
+public class MyHashSet {
+	private final int SIZE = 1000;
+	private ArrayList<Integer> myBucket;
+	
+	
+	public MyHashSet() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	private int hashFuntion(int key)
+	{
+	  return key%SIZE;	
+	}
+
+}

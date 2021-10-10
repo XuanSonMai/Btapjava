@@ -1,0 +1,13 @@
+package Mythread;
+
+public class TestThread2 {
+	public int Tong;
+	
+	
+	public TestThread2()
+	{
+		
+		this.Tong=1000;
+	}
+
+}

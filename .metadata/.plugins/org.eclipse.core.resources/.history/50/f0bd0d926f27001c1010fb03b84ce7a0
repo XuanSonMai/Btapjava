@@ -1,0 +1,24 @@
+package Lesson70;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
+
+public class Test {
+	public static void main(String[] args) {
+		File f0 = new File("\\Users\\Admin\\baitapjava\\JAVA1\\src\\Lesson70\\move");
+		File f1 = new File("\\Users\\Admin\\baitapjava\\JAVA1\\src\\Lesson70\\texx");
+		
+		System.out.println(f1.exists());
+		
+		try {
+			Files.move(f0.toPath(), f1.toPath(), StandardCopyOption.REPLACE_EXISTING);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

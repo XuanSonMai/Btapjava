@@ -1,0 +1,6 @@
+package Java36;
+
+public class Employee extends Person {
+	String diachiString;
+
+}

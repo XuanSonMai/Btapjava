@@ -1,0 +1,48 @@
+package Lesson67;
+
+import java.io.File;
+import java.io.IOException;
+
+public class Test {
+	public static void main(String[] args) {
+		// luu y
+		// MS window: \ == \\;
+		
+		// kiem tra thu muc hoac tap tin co ton tai hay chua
+//	     File fordel1 = new File ("C:\\Users\\Admin\\baitapjava\\JAVA1");
+//	     File fordel2 = new File ("C:\\Users\\Admin\\baitapjava\\JAVA0");
+	     // test fordel exist?
+//	     System.out.println(fordel1.exists());
+//	     System.out.println(fordel2.exists());
+//	     
+	     
+	     // tao thu muc : method mkdir
+//	     File fordel3 = new File ("C:\\Users\\Admin\\baitapjava\\java00");
+//	     fordel3.mkdir();
+//	     
+//	     System.out.println(fordel3.exists());
+	     
+	
+		
+		
+	     // tao ra nhieu thu muc cung luc : mkdirs
+	     File d2 =new File ("C:\\Users\\Admin\\baitapjava\\java01\\a\\b\\c\\d.txt");
+	     d2.mkdirs();
+	     System.out.println(d2.exists());
+//	     
+//	     // tao  tap tin co phan mo rong ( .exe, .doc, .xls)
+//	     File file1= new File ("C:\\Users\\Admin\\baitapjava\\java00\\vidu1.txt");
+//	     try {
+//			file1.createNewFile();
+//		} catch (IOException e) {
+//			// ko co quyen tao tap tin
+//			/// o cung bi day
+//			// duong dan sai
+//			e.printStackTrace();
+//		}
+//	     System.out.println(file1.exists());
+	}
+	
+     
+     
+}

@@ -1,0 +1,6 @@
+package java43;
+
+public class Node  extends Mytreenode{
+	
+
+}

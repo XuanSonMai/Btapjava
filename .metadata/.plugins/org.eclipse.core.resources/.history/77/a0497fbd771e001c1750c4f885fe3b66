@@ -1,0 +1,6 @@
+package Interface;
+
+public interface MayTinhBoTui {	
+	double cong(double a, double b);
+
+}

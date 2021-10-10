@@ -1,0 +1,18 @@
+package BinaryTree;
+
+import BinaryTree.MyTreeNode.TreeNode;
+
+public class Test {
+
+	public static void main(String[] args) {
+		MyTreeNode myTreeNode = new MyTreeNode();
+		myTreeNode.khoitao1();
+		
+		 TreeNode a=myTreeNode.Insert(myTreeNode.rooTreeNode, 0);
+		 System.out.println("Return"+a.value);
+		
+		
+
+	}
+
+}

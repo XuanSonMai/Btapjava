@@ -1,0 +1,12 @@
+package LC_046;
+
+public class Test {
+int[] frequency(int[]a)
+{
+	int addValue=100;
+	int max_Value =100+addValue;
+	int [] count = new int [max_Value+1];
+	
+	
+	reuturn a;}
+}

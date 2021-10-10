@@ -1,0 +1,14 @@
+package BinaryTree;
+
+public class Test {
+
+	public static void main(String[] args) {
+		MyTreeNode myTreeNode = new MyTreeNode();
+		myTreeNode.khoitao1();
+		myTreeNode.Insert(myTreeNode.rooTreeNode, 4);
+		
+		
+
+	}
+
+}

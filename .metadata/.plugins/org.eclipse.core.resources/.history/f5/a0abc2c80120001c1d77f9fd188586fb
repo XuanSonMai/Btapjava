@@ -1,0 +1,12 @@
+package Arrays;
+
+public class ViDu {
+	
+	public static void main(String[] args) {
+		String names[] = new String[3];
+		names[0] = "mai";
+		names[1] = "xuan";
+	}
+	
+
+}

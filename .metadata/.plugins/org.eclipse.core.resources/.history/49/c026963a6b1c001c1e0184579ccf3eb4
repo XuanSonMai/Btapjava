@@ -1,0 +1,9 @@
+package HashSet;
+
+public class HashSet {
+	boolean containsDuplicate(int[] nums)
+	{
+		
+	}
+
+}

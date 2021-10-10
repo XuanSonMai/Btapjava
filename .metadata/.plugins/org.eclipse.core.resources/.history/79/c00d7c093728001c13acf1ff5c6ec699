@@ -1,0 +1,42 @@
+package Java36;
+
+public class Person {
+	String nameString;
+	static private int count=0;
+
+	public Person(String nameString) {
+		super();
+		this.nameString = nameString;
+	}
+
+	
+	public Person() {
+		super();
+	}
+
+
+	public String getNameString() {
+		return nameString;
+	}
+
+	public void setNameString(String nameString) {
+		this.nameString = nameString;
+	}
+	void default1()
+	{}
+	public void public1()
+	{}
+	protected void protect() {
+		
+	}
+	public static void main(String[] args) {
+		System.out.println(count);
+		System.out.println(count);
+	}
+	
+	
+	
+	
+	
+
+}
